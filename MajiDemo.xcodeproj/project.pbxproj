@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7326488024FD51C5004609E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7326487F24FD51C5004609E1 /* AppDelegate.swift */; };
+		7326488224FD51C5004609E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7326488124FD51C5004609E1 /* SceneDelegate.swift */; };
+		7326488424FD51C5004609E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7326488324FD51C5004609E1 /* ViewController.swift */; };
+		7326488724FD51C5004609E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7326488524FD51C5004609E1 /* Main.storyboard */; };
+		7326488924FD51C7004609E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7326488824FD51C7004609E1 /* Assets.xcassets */; };
+		7326488C24FD51C7004609E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7326488A24FD51C7004609E1 /* LaunchScreen.storyboard */; };
+		7326489724FD51C8004609E1 /* MajiDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7326489624FD51C8004609E1 /* MajiDemoTests.swift */; };
+		732648A224FD51C8004609E1 /* MajiDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732648A124FD51C8004609E1 /* MajiDemoUITests.swift */; };
+		817407FF9B47728C89040125 /* Pods_MajiDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CB04EC7A4C7BC34456D38 /* Pods_MajiDemo.framework */; };
+		B283756A5953D6153F9810A8 /* Pods_MajiDemo_MajiDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4986748822D32B46111976E2 /* Pods_MajiDemo_MajiDemoUITests.framework */; };
+		B77C8591281BC84991B179D9 /* Pods_MajiDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60BE28C5B6395466BA9AD9CF /* Pods_MajiDemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7326489324FD51C8004609E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7326487424FD51C5004609E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7326487B24FD51C5004609E1;
+			remoteInfo = MajiDemo;
+		};
+		7326489E24FD51C8004609E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7326487424FD51C5004609E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7326487B24FD51C5004609E1;
+			remoteInfo = MajiDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		158DF820B4030BAA8699009A /* Pods-MajiDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-MajiDemoTests/Pods-MajiDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3CFB48C54D7E6F0B9CF24500 /* Pods-MajiDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiDemoTests.release.xcconfig"; path = "Target Support Files/Pods-MajiDemoTests/Pods-MajiDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		4986748822D32B46111976E2 /* Pods_MajiDemo_MajiDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajiDemo_MajiDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB51C1999CF6ED5D112ED23 /* Pods-MajiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiDemo.release.xcconfig"; path = "Target Support Files/Pods-MajiDemo/Pods-MajiDemo.release.xcconfig"; sourceTree = "<group>"; };
+		60BE28C5B6395466BA9AD9CF /* Pods_MajiDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajiDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7301700315A566882A022E2A /* Pods-MajiDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiDemo.debug.xcconfig"; path = "Target Support Files/Pods-MajiDemo/Pods-MajiDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7326487C24FD51C5004609E1 /* MajiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MajiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7326487F24FD51C5004609E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7326488124FD51C5004609E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7326488324FD51C5004609E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7326488624FD51C5004609E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7326488824FD51C7004609E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7326488B24FD51C7004609E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7326488D24FD51C7004609E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7326489224FD51C8004609E1 /* MajiDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MajiDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7326489624FD51C8004609E1 /* MajiDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiDemoTests.swift; sourceTree = "<group>"; };
+		7326489824FD51C8004609E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7326489D24FD51C8004609E1 /* MajiDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MajiDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		732648A124FD51C8004609E1 /* MajiDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiDemoUITests.swift; sourceTree = "<group>"; };
+		732648A324FD51C8004609E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8AD870B9BC29F586E891FFA /* Pods-MajiDemo-MajiDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiDemo-MajiDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-MajiDemo-MajiDemoUITests/Pods-MajiDemo-MajiDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC0CB04EC7A4C7BC34456D38 /* Pods_MajiDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajiDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA00549CCD7CB16345572A8 /* Pods-MajiDemo-MajiDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiDemo-MajiDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-MajiDemo-MajiDemoUITests/Pods-MajiDemo-MajiDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7326487924FD51C5004609E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817407FF9B47728C89040125 /* Pods_MajiDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7326488F24FD51C8004609E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77C8591281BC84991B179D9 /* Pods_MajiDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7326489A24FD51C8004609E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B283756A5953D6153F9810A8 /* Pods_MajiDemo_MajiDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71150ED6B56E5CFEBE94A921 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC0CB04EC7A4C7BC34456D38 /* Pods_MajiDemo.framework */,
+				4986748822D32B46111976E2 /* Pods_MajiDemo_MajiDemoUITests.framework */,
+				60BE28C5B6395466BA9AD9CF /* Pods_MajiDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7326487324FD51C5004609E1 = {
+			isa = PBXGroup;
+			children = (
+				7326487E24FD51C5004609E1 /* MajiDemo */,
+				7326489524FD51C8004609E1 /* MajiDemoTests */,
+				732648A024FD51C8004609E1 /* MajiDemoUITests */,
+				7326487D24FD51C5004609E1 /* Products */,
+				C151F4A15141572F39710939 /* Pods */,
+				71150ED6B56E5CFEBE94A921 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7326487D24FD51C5004609E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7326487C24FD51C5004609E1 /* MajiDemo.app */,
+				7326489224FD51C8004609E1 /* MajiDemoTests.xctest */,
+				7326489D24FD51C8004609E1 /* MajiDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7326487E24FD51C5004609E1 /* MajiDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7326487F24FD51C5004609E1 /* AppDelegate.swift */,
+				7326488124FD51C5004609E1 /* SceneDelegate.swift */,
+				7326488324FD51C5004609E1 /* ViewController.swift */,
+				7326488524FD51C5004609E1 /* Main.storyboard */,
+				7326488824FD51C7004609E1 /* Assets.xcassets */,
+				7326488A24FD51C7004609E1 /* LaunchScreen.storyboard */,
+				7326488D24FD51C7004609E1 /* Info.plist */,
+			);
+			path = MajiDemo;
+			sourceTree = "<group>";
+		};
+		7326489524FD51C8004609E1 /* MajiDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7326489624FD51C8004609E1 /* MajiDemoTests.swift */,
+				7326489824FD51C8004609E1 /* Info.plist */,
+			);
+			path = MajiDemoTests;
+			sourceTree = "<group>";
+		};
+		732648A024FD51C8004609E1 /* MajiDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				732648A124FD51C8004609E1 /* MajiDemoUITests.swift */,
+				732648A324FD51C8004609E1 /* Info.plist */,
+			);
+			path = MajiDemoUITests;
+			sourceTree = "<group>";
+		};
+		C151F4A15141572F39710939 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7301700315A566882A022E2A /* Pods-MajiDemo.debug.xcconfig */,
+				5AB51C1999CF6ED5D112ED23 /* Pods-MajiDemo.release.xcconfig */,
+				B8AD870B9BC29F586E891FFA /* Pods-MajiDemo-MajiDemoUITests.debug.xcconfig */,
+				FBA00549CCD7CB16345572A8 /* Pods-MajiDemo-MajiDemoUITests.release.xcconfig */,
+				158DF820B4030BAA8699009A /* Pods-MajiDemoTests.debug.xcconfig */,
+				3CFB48C54D7E6F0B9CF24500 /* Pods-MajiDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7326487B24FD51C5004609E1 /* MajiDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 732648A624FD51C8004609E1 /* Build configuration list for PBXNativeTarget "MajiDemo" */;
+			buildPhases = (
+				081B4822677DD5D24BA39E21 /* [CP] Check Pods Manifest.lock */,
+				7326487824FD51C5004609E1 /* Sources */,
+				7326487924FD51C5004609E1 /* Frameworks */,
+				7326487A24FD51C5004609E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MajiDemo;
+			productName = MajiDemo;
+			productReference = 7326487C24FD51C5004609E1 /* MajiDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7326489124FD51C8004609E1 /* MajiDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 732648A924FD51C8004609E1 /* Build configuration list for PBXNativeTarget "MajiDemoTests" */;
+			buildPhases = (
+				BE3D7B99C6381573B9748476 /* [CP] Check Pods Manifest.lock */,
+				7326488E24FD51C8004609E1 /* Sources */,
+				7326488F24FD51C8004609E1 /* Frameworks */,
+				7326489024FD51C8004609E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7326489424FD51C8004609E1 /* PBXTargetDependency */,
+			);
+			name = MajiDemoTests;
+			productName = MajiDemoTests;
+			productReference = 7326489224FD51C8004609E1 /* MajiDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7326489C24FD51C8004609E1 /* MajiDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 732648AC24FD51C8004609E1 /* Build configuration list for PBXNativeTarget "MajiDemoUITests" */;
+			buildPhases = (
+				031DA940A82D2F11692C7152 /* [CP] Check Pods Manifest.lock */,
+				7326489924FD51C8004609E1 /* Sources */,
+				7326489A24FD51C8004609E1 /* Frameworks */,
+				7326489B24FD51C8004609E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7326489F24FD51C8004609E1 /* PBXTargetDependency */,
+			);
+			name = MajiDemoUITests;
+			productName = MajiDemoUITests;
+			productReference = 7326489D24FD51C8004609E1 /* MajiDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7326487424FD51C5004609E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "dull-brain";
+				TargetAttributes = {
+					7326487B24FD51C5004609E1 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					7326489124FD51C8004609E1 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 7326487B24FD51C5004609E1;
+					};
+					7326489C24FD51C8004609E1 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 7326487B24FD51C5004609E1;
+					};
+				};
+			};
+			buildConfigurationList = 7326487724FD51C5004609E1 /* Build configuration list for PBXProject "MajiDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7326487324FD51C5004609E1;
+			productRefGroup = 7326487D24FD51C5004609E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7326487B24FD51C5004609E1 /* MajiDemo */,
+				7326489124FD51C8004609E1 /* MajiDemoTests */,
+				7326489C24FD51C8004609E1 /* MajiDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7326487A24FD51C5004609E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7326488C24FD51C7004609E1 /* LaunchScreen.storyboard in Resources */,
+				7326488924FD51C7004609E1 /* Assets.xcassets in Resources */,
+				7326488724FD51C5004609E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7326489024FD51C8004609E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7326489B24FD51C8004609E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		031DA940A82D2F11692C7152 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MajiDemo-MajiDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		081B4822677DD5D24BA39E21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MajiDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE3D7B99C6381573B9748476 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MajiDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7326487824FD51C5004609E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7326488424FD51C5004609E1 /* ViewController.swift in Sources */,
+				7326488024FD51C5004609E1 /* AppDelegate.swift in Sources */,
+				7326488224FD51C5004609E1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7326488E24FD51C8004609E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7326489724FD51C8004609E1 /* MajiDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7326489924FD51C8004609E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732648A224FD51C8004609E1 /* MajiDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7326489424FD51C8004609E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7326487B24FD51C5004609E1 /* MajiDemo */;
+			targetProxy = 7326489324FD51C8004609E1 /* PBXContainerItemProxy */;
+		};
+		7326489F24FD51C8004609E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7326487B24FD51C5004609E1 /* MajiDemo */;
+			targetProxy = 7326489E24FD51C8004609E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7326488524FD51C5004609E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7326488624FD51C5004609E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7326488A24FD51C7004609E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7326488B24FD51C7004609E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		732648A424FD51C8004609E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		732648A524FD51C8004609E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		732648A724FD51C8004609E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7301700315A566882A022E2A /* Pods-MajiDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69RCXM58F8;
+				INFOPLIST_FILE = MajiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freelancer.dullbrain.MajiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		732648A824FD51C8004609E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB51C1999CF6ED5D112ED23 /* Pods-MajiDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69RCXM58F8;
+				INFOPLIST_FILE = MajiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freelancer.dullbrain.MajiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		732648AA24FD51C8004609E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158DF820B4030BAA8699009A /* Pods-MajiDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69RCXM58F8;
+				INFOPLIST_FILE = MajiDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freelancer.dullbrain.MajiDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MajiDemo.app/MajiDemo";
+			};
+			name = Debug;
+		};
+		732648AB24FD51C8004609E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFB48C54D7E6F0B9CF24500 /* Pods-MajiDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69RCXM58F8;
+				INFOPLIST_FILE = MajiDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freelancer.dullbrain.MajiDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MajiDemo.app/MajiDemo";
+			};
+			name = Release;
+		};
+		732648AD24FD51C8004609E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8AD870B9BC29F586E891FFA /* Pods-MajiDemo-MajiDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69RCXM58F8;
+				INFOPLIST_FILE = MajiDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freelancer.dullbrain.MajiDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MajiDemo;
+			};
+			name = Debug;
+		};
+		732648AE24FD51C8004609E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBA00549CCD7CB16345572A8 /* Pods-MajiDemo-MajiDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69RCXM58F8;
+				INFOPLIST_FILE = MajiDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freelancer.dullbrain.MajiDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MajiDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7326487724FD51C5004609E1 /* Build configuration list for PBXProject "MajiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				732648A424FD51C8004609E1 /* Debug */,
+				732648A524FD51C8004609E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		732648A624FD51C8004609E1 /* Build configuration list for PBXNativeTarget "MajiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				732648A724FD51C8004609E1 /* Debug */,
+				732648A824FD51C8004609E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		732648A924FD51C8004609E1 /* Build configuration list for PBXNativeTarget "MajiDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				732648AA24FD51C8004609E1 /* Debug */,
+				732648AB24FD51C8004609E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		732648AC24FD51C8004609E1 /* Build configuration list for PBXNativeTarget "MajiDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				732648AD24FD51C8004609E1 /* Debug */,
+				732648AE24FD51C8004609E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7326487424FD51C5004609E1 /* Project object */;
+}
