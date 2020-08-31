@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		7326488024FD51C5004609E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7326487F24FD51C5004609E1 /* AppDelegate.swift */; };
 		7326488224FD51C5004609E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7326488124FD51C5004609E1 /* SceneDelegate.swift */; };
-		7326488424FD51C5004609E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7326488324FD51C5004609E1 /* ViewController.swift */; };
 		7326488724FD51C5004609E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7326488524FD51C5004609E1 /* Main.storyboard */; };
 		7326488924FD51C7004609E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7326488824FD51C7004609E1 /* Assets.xcassets */; };
 		7326488C24FD51C7004609E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7326488A24FD51C7004609E1 /* LaunchScreen.storyboard */; };
 		7326489724FD51C8004609E1 /* MajiDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7326489624FD51C8004609E1 /* MajiDemoTests.swift */; };
 		732648A224FD51C8004609E1 /* MajiDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732648A124FD51C8004609E1 /* MajiDemoUITests.swift */; };
+		732648B524FD599B004609E1 /* MDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732648B424FD599B004609E1 /* MDNavigationController.swift */; };
+		732648B724FD59DE004609E1 /* MDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732648B624FD59DE004609E1 /* MDBaseViewController.swift */; };
+		732648BA24FD5A04004609E1 /* MDAPITestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732648B924FD5A04004609E1 /* MDAPITestViewController.swift */; };
+		732648BC24FD5A2D004609E1 /* MDAPITestHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732648BB24FD5A2D004609E1 /* MDAPITestHistoryViewController.swift */; };
+		732648BF24FD5A7F004609E1 /* MDDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732648BE24FD5A7F004609E1 /* MDDatabaseManager.swift */; };
+		732648C224FD5AFA004609E1 /* MDApiTestDBCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732648C124FD5AFA004609E1 /* MDApiTestDBCache.swift */; };
+		732648C524FD5B57004609E1 /* MDApiTestItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732648C424FD5B57004609E1 /* MDApiTestItem.swift */; };
+		732648C724FD5B8C004609E1 /* MDApiTestHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732648C624FD5B8C004609E1 /* MDApiTestHistoryCell.swift */; };
 		817407FF9B47728C89040125 /* Pods_MajiDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CB04EC7A4C7BC34456D38 /* Pods_MajiDemo.framework */; };
 		B283756A5953D6153F9810A8 /* Pods_MajiDemo_MajiDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4986748822D32B46111976E2 /* Pods_MajiDemo_MajiDemoUITests.framework */; };
 		B77C8591281BC84991B179D9 /* Pods_MajiDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60BE28C5B6395466BA9AD9CF /* Pods_MajiDemoTests.framework */; };
@@ -47,7 +54,6 @@
 		7326487C24FD51C5004609E1 /* MajiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MajiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7326487F24FD51C5004609E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7326488124FD51C5004609E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7326488324FD51C5004609E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7326488624FD51C5004609E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7326488824FD51C7004609E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7326488B24FD51C7004609E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +64,14 @@
 		7326489D24FD51C8004609E1 /* MajiDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MajiDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		732648A124FD51C8004609E1 /* MajiDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiDemoUITests.swift; sourceTree = "<group>"; };
 		732648A324FD51C8004609E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		732648B424FD599B004609E1 /* MDNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDNavigationController.swift; sourceTree = "<group>"; };
+		732648B624FD59DE004609E1 /* MDBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDBaseViewController.swift; sourceTree = "<group>"; };
+		732648B924FD5A04004609E1 /* MDAPITestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDAPITestViewController.swift; sourceTree = "<group>"; };
+		732648BB24FD5A2D004609E1 /* MDAPITestHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDAPITestHistoryViewController.swift; sourceTree = "<group>"; };
+		732648BE24FD5A7F004609E1 /* MDDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDDatabaseManager.swift; sourceTree = "<group>"; };
+		732648C124FD5AFA004609E1 /* MDApiTestDBCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDApiTestDBCache.swift; sourceTree = "<group>"; };
+		732648C424FD5B57004609E1 /* MDApiTestItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDApiTestItem.swift; sourceTree = "<group>"; };
+		732648C624FD5B8C004609E1 /* MDApiTestHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDApiTestHistoryCell.swift; sourceTree = "<group>"; };
 		B8AD870B9BC29F586E891FFA /* Pods-MajiDemo-MajiDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiDemo-MajiDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-MajiDemo-MajiDemoUITests/Pods-MajiDemo-MajiDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC0CB04EC7A4C7BC34456D38 /* Pods_MajiDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajiDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA00549CCD7CB16345572A8 /* Pods-MajiDemo-MajiDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiDemo-MajiDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-MajiDemo-MajiDemoUITests/Pods-MajiDemo-MajiDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,11 +142,11 @@
 			children = (
 				7326487F24FD51C5004609E1 /* AppDelegate.swift */,
 				7326488124FD51C5004609E1 /* SceneDelegate.swift */,
-				7326488324FD51C5004609E1 /* ViewController.swift */,
 				7326488524FD51C5004609E1 /* Main.storyboard */,
 				7326488824FD51C7004609E1 /* Assets.xcassets */,
 				7326488A24FD51C7004609E1 /* LaunchScreen.storyboard */,
 				7326488D24FD51C7004609E1 /* Info.plist */,
+				732648AF24FD580C004609E1 /* Source */,
 			);
 			path = MajiDemo;
 			sourceTree = "<group>";
@@ -153,6 +167,77 @@
 				732648A324FD51C8004609E1 /* Info.plist */,
 			);
 			path = MajiDemoUITests;
+			sourceTree = "<group>";
+		};
+		732648AF24FD580C004609E1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				732648BD24FD5A4F004609E1 /* Database */,
+				732648B024FD5824004609E1 /* Root */,
+				732648B124FD582F004609E1 /* Bussiness */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		732648B024FD5824004609E1 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				732648B424FD599B004609E1 /* MDNavigationController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		732648B124FD582F004609E1 /* Bussiness */ = {
+			isa = PBXGroup;
+			children = (
+				732648B824FD59E6004609E1 /* Base */,
+				732648B224FD586D004609E1 /* APITest */,
+				732648B324FD588E004609E1 /* TestHistory */,
+			);
+			path = Bussiness;
+			sourceTree = "<group>";
+		};
+		732648B224FD586D004609E1 /* APITest */ = {
+			isa = PBXGroup;
+			children = (
+				732648C024FD5A8B004609E1 /* DBCache */,
+				732648B924FD5A04004609E1 /* MDAPITestViewController.swift */,
+				732648BB24FD5A2D004609E1 /* MDAPITestHistoryViewController.swift */,
+				732648C624FD5B8C004609E1 /* MDApiTestHistoryCell.swift */,
+			);
+			path = APITest;
+			sourceTree = "<group>";
+		};
+		732648B324FD588E004609E1 /* TestHistory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestHistory;
+			sourceTree = "<group>";
+		};
+		732648B824FD59E6004609E1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				732648B624FD59DE004609E1 /* MDBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		732648BD24FD5A4F004609E1 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				732648BE24FD5A7F004609E1 /* MDDatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		732648C024FD5A8B004609E1 /* DBCache */ = {
+			isa = PBXGroup;
+			children = (
+				732648C124FD5AFA004609E1 /* MDApiTestDBCache.swift */,
+				732648C424FD5B57004609E1 /* MDApiTestItem.swift */,
+			);
+			path = DBCache;
 			sourceTree = "<group>";
 		};
 		C151F4A15141572F39710939 /* Pods */ = {
@@ -371,9 +456,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7326488424FD51C5004609E1 /* ViewController.swift in Sources */,
+				732648B724FD59DE004609E1 /* MDBaseViewController.swift in Sources */,
+				732648BC24FD5A2D004609E1 /* MDAPITestHistoryViewController.swift in Sources */,
+				732648BF24FD5A7F004609E1 /* MDDatabaseManager.swift in Sources */,
 				7326488024FD51C5004609E1 /* AppDelegate.swift in Sources */,
+				732648B524FD599B004609E1 /* MDNavigationController.swift in Sources */,
 				7326488224FD51C5004609E1 /* SceneDelegate.swift in Sources */,
+				732648C224FD5AFA004609E1 /* MDApiTestDBCache.swift in Sources */,
+				732648C524FD5B57004609E1 /* MDApiTestItem.swift in Sources */,
+				732648C724FD5B8C004609E1 /* MDApiTestHistoryCell.swift in Sources */,
+				732648BA24FD5A04004609E1 /* MDAPITestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
