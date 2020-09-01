@@ -9,5 +9,7 @@
 #ifndef ObjectC_Swift_Bridge_h
 #define ObjectC_Swift_Bridge_h
 
+#import "FMDB.h"
+#import "MJRefresh.h"
 
 #endif /* ObjectC_Swift_Bridge_h */

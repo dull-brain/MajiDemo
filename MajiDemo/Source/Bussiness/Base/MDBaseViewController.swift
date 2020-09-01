@@ -16,7 +16,6 @@ class MDBaseViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
     }
     
-
     /*
     // MARK: - Navigation
 

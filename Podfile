@@ -10,6 +10,7 @@ target 'MajiDemo' do
   pod 'RxCocoa'
   pod 'AFNetworking'
   pod 'FMDB'
+  pod 'MJRefresh','~> 3.1.12', :inhibit_warnings => true
   pod 'SwiftLint'
   
   target 'MajiDemoTests' do

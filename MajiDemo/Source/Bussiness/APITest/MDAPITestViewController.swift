@@ -7,36 +7,66 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class MDAPITestViewController: MDBaseViewController {
 
     var scrollView: UIScrollView?
     var dataLabel: UILabel?
 
-    var reloadTimer: Timer? = nil
+    var reloadTimer: Timer?
+    var disposeBag = DisposeBag()
+    @objc dynamic var dataStr: String?
+    
+    var apiTask: URLSessionDataTask?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.title = "API访问"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "历史", style: .plain, target: self, action: #selector(showHistory))
-        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(
+            title: "历史",
+            style: .plain,
+            target: self,
+            action: #selector(showHistory))
+
         self.scrollView = UIScrollView()
         self.dataLabel = UILabel()
         
         self.dataLabel!.textColor = UIColor.black
         self.dataLabel!.font = UIFont.boldSystemFont(ofSize: 20)
-        self.dataLabel!.numberOfLines = 0;
+        self.dataLabel!.numberOfLines = 0
         
         self.view.addSubview(self.scrollView!)
         self.scrollView!.addSubview(self.dataLabel!)
         
-        self.reloadData()
+        self.rx.observeWeakly(String.self, "dataStr")
+        .subscribe(onNext: {[weak self] (text) in
+            DispatchQueue.main.async {
+                self?.dataLabel?.text = self?.dataStr
+                self?.relayout()
+            }
+        })
+        .disposed(by: disposeBag)
+        
+        DispatchQueue.global().async {
+            MDApiTestDBCache.query(groupSize: 1, groupIndex: 0, ascending: false) { (array) in
+                if let data: MDApiTestItem = array.first {
+                    self.dataStr = data.data?.description
+                }
+            }
+        }
+        
+        weak var weakSelf = self
+        Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { (timer) in
+            weakSelf?.reloadData()
+        }
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self .relayout();
+        self .relayout()
     }
     
     @objc func showHistory() -> Void {
@@ -45,26 +75,46 @@ class MDAPITestViewController: MDBaseViewController {
     
     func relayout() {
         self.scrollView?.frame = self.view.frame
-        let textSize = self.dataLabel?.sizeThatFits(CGSize(width: self.view.frame.size.width - 20, height: CGFloat.greatestFiniteMagnitude))
-        self.dataLabel?.frame = CGRect(x: 10, y: 10, width: self.view.frame.size.width - 20, height: textSize!.height)
-        self.scrollView!.contentSize = CGSize(width: self.view.frame.size.width, height: (self.dataLabel?.frame.size.height)! + 20)
+        let textSize = self.dataLabel?.sizeThatFits(
+            CGSize(
+            width: self.view.frame.size.width - 20,
+            height: CGFloat.greatestFiniteMagnitude))
+        self.dataLabel?.frame = CGRect(
+        x: 10,
+        y: 10,
+        width: self.view.frame.size.width - 20,
+        height: textSize!.height)
+        self.scrollView!.contentSize = CGSize(
+            width: self.view.frame.size.width,
+            height: (self.dataLabel?.frame.size.height)! + 20)
     }
     
     func reloadData() {
-        URLSession.shared.dataTask(with: URL.init(string: "https://api.github-bb.com")!) {(data, response, error) in
-            
-            let dic = self.testData()
-            DispatchQueue.global().async {
-                let item = MDApiTestItem.init(eId: 1, time: Date(), data: dic)
-                DispatchQueue.main.async {
-                    self.dataLabel?.text = item.data?.description
-                    self.relayout()
-                }
+        if (self.apiTask == nil) {
+            weak var weakSelf = self
+            self.apiTask = URLSession.shared
+                .dataTask(with: URL.init(string: "https://api.github.com")!) {(data, response, error) in
+                    if (error == nil) {
+                        let dict = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+                        if let dic = dict {
+                            DispatchQueue.global().async {
+                                let item = MDApiTestItem()
+                                item.data = dic as? [String: Any]
+                                item.time = Date()
+                                MDApiTestDBCache.addRequest(item: item)
+                                self.dataStr = item.data?.description
+                            }
+                        }
+                    } else {
+                        
+                    }
+                    weakSelf?.apiTask = nil
             }
-        }.resume()
+            self.apiTask?.resume()
+        }
     }
-    
-    func testData() -> Dictionary<String, String> {
+    /*
+    func testData() -> [String: String] {
         return [
           "current_user_url": "https://api.github.com/user",
           "current_user_authorizations_html_url": "https://github.com/settings/connections/applications{/client_id}",
@@ -100,10 +150,11 @@ class MDAPITestViewController: MDBaseViewController {
           "user_search_url": "https://api.github.com/search/users?q={query}{&page,per_page,sort,order}"
         ]
     }
+ */
     
     deinit {
         self.reloadTimer?.invalidate()
-        self.reloadTimer = nil
+        self.apiTask?.cancel()
     }
 
     /*

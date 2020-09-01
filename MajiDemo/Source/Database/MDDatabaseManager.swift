@@ -20,7 +20,7 @@ class MDDatabaseManager: NSObject {
     }
     
     private func databaseInit() {
-        let dir: String = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let dir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         let filePath = String.init(format: "%@/database.db", dir)
         self.databaseFilePath = filePath
         if (FileManager.default.fileExists(atPath: self.databaseFilePath) == false) {

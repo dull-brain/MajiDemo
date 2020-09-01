@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -72,6 +72,7 @@
 		732648C124FD5AFA004609E1 /* MDApiTestDBCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDApiTestDBCache.swift; sourceTree = "<group>"; };
 		732648C424FD5B57004609E1 /* MDApiTestItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDApiTestItem.swift; sourceTree = "<group>"; };
 		732648C624FD5B8C004609E1 /* MDApiTestHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDApiTestHistoryCell.swift; sourceTree = "<group>"; };
+		7371FE7F24FD76B90053774D /* ObjectC_Swift_Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectC_Swift_Bridge.h; sourceTree = "<group>"; };
 		B8AD870B9BC29F586E891FFA /* Pods-MajiDemo-MajiDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiDemo-MajiDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-MajiDemo-MajiDemoUITests/Pods-MajiDemo-MajiDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC0CB04EC7A4C7BC34456D38 /* Pods_MajiDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajiDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA00549CCD7CB16345572A8 /* Pods-MajiDemo-MajiDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiDemo-MajiDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-MajiDemo-MajiDemoUITests/Pods-MajiDemo-MajiDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +147,7 @@
 				7326488824FD51C7004609E1 /* Assets.xcassets */,
 				7326488A24FD51C7004609E1 /* LaunchScreen.storyboard */,
 				7326488D24FD51C7004609E1 /* Info.plist */,
+				7371FE7F24FD76B90053774D /* ObjectC_Swift_Bridge.h */,
 				732648AF24FD580C004609E1 /* Source */,
 			);
 			path = MajiDemo;
@@ -264,6 +266,8 @@
 				7326487824FD51C5004609E1 /* Sources */,
 				7326487924FD51C5004609E1 /* Frameworks */,
 				7326487A24FD51C5004609E1 /* Resources */,
+				CB850F69D3A2D4021932BC32 /* [CP] Embed Pods Frameworks */,
+				7371FE8024FD76EE0053774D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -301,6 +305,7 @@
 				7326489924FD51C8004609E1 /* Sources */,
 				7326489A24FD51C8004609E1 /* Frameworks */,
 				7326489B24FD51C8004609E1 /* Resources */,
+				F56E8ABCE44A190D52D18023 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,6 +432,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7371FE8024FD76EE0053774D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		BE3D7B99C6381573B9748476 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -447,6 +469,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB850F69D3A2D4021932BC32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MajiDemo/Pods-MajiDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MajiDemo/Pods-MajiDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MajiDemo/Pods-MajiDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F56E8ABCE44A190D52D18023 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MajiDemo-MajiDemoUITests/Pods-MajiDemo-MajiDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MajiDemo-MajiDemoUITests/Pods-MajiDemo-MajiDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MajiDemo-MajiDemoUITests/Pods-MajiDemo-MajiDemoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -640,6 +696,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69RCXM58F8;
 				INFOPLIST_FILE = MajiDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
@@ -649,6 +706,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = freelancer.dullbrain.MajiDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MajiDemo/ObjectC_Swift_Bridge.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -660,6 +718,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69RCXM58F8;
 				INFOPLIST_FILE = MajiDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
@@ -669,6 +728,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = freelancer.dullbrain.MajiDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MajiDemo/ObjectC_Swift_Bridge.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
